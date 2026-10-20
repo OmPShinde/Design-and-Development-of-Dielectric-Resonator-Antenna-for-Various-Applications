@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "source": "Zirconia_DRA_for_5_8_GHz.docx, Tables II and III (HFSS simulation); measured values read from the VNA screenshot",
+    "units": {"frequency": "GHz", "s11": "dB", "gain": "dBi", "efficiency": "percent", "volume": "mm^3"}
+  },
+  "simulated": {
+    "circular_patch": {
+      "label": "Circular patch (FR-4)",
+      "f_res_ghz": 5.827, "s11_min_db": -15.95, "vswr": 1.38,
+      "band_ghz": [5.753, 5.900], "bandwidth_mhz": 147, "bandwidth_percent": 2.52,
+      "realized_gain_at_fr_dbi": 3.7, "peak_realized_gain_dbi": 3.7,
+      "efficiency_at_fr_percent": 59.9, "peak_directivity_dbi": 6.1,
+      "main_beam": "broadside", "radiator_volume_mm3": null
+    },
+    "alumina_cdra": {
+      "label": "Alumina CDRA (er=9.9)",
+      "f_res_ghz": 5.769, "s11_min_db": -25.07, "vswr": 1.12,
+      "band_ghz": [5.754, 5.793], "bandwidth_mhz": 39.5, "bandwidth_percent": 0.68,
+      "realized_gain_at_fr_dbi": 4.7, "peak_realized_gain_dbi": 5.2,
+      "efficiency_at_fr_percent": 68.5, "peak_directivity_dbi": 6.4,
+      "main_beam": "off-axis", "radiator_volume_mm3": 21179
+    },
+    "zirconia_cdra": {
+      "label": "Zirconia CDRA (er=23)",
+      "f_res_ghz": 5.767, "s11_min_db": -50.25, "vswr": 1.006,
+      "band_ghz": [5.726, 5.807], "bandwidth_mhz": 81, "bandwidth_percent": 1.41,
+      "realized_gain_at_fr_dbi": 5.9, "peak_realized_gain_dbi": 7.85,
+      "efficiency_at_fr_percent": 85.6, "peak_directivity_dbi": 6.8,
+      "main_beam": "broadside", "radiator_volume_mm3": 1208
+    },
+    "zirconia_parasitic_ring": {
+      "label": "Zirconia CDRA + 12-sided ring (future scope)",
+      "matched_bands_ghz": [
+        {"f_ghz": 4.05, "s11_db": -27.7, "band_ghz": [3.95, 4.15]},
+        {"f_ghz": 5.02, "s11_db": -25.5, "band_ghz": [4.97, 5.08]},
+        {"f_ghz": 5.84, "s11_db": -25.6, "band_ghz": [5.65, 5.93]},
+        {"f_ghz": 8.20, "s11_db": -25.1, "band_ghz": null}
+      ],
+      "bandwidth_at_5p8_mhz": 283, "bandwidth_at_5p8_percent": 4.9,
+      "peak_realized_gain_dbi": 7.6, "peak_efficiency_percent_near_5p8": 84,
+      "peak_directivity_dbi": 5.3
+    }
+  },
+  "measured": {
+    "zirconia_cdra_vna": {
+      "instrument": "Anritsu ShockLine MS46122B VNA",
+      "date": "2026-09-22",
+      "f_res_ghz": 5.70, "s11_min_db": -28.8, "vswr": 1.08,
+      "note": "Read from the exported S11/VSWR plot (about 20 MHz point spacing); values are approximate. Prototype build and measurement are not yet described in the paper."
+    }
+  }
+}

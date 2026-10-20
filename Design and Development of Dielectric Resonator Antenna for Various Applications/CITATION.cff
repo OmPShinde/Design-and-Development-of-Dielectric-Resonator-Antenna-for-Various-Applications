@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Compact Zirconia Cylindrical Dielectric Resonator Antenna for 5.8 GHz Next-Generation Wireless Communication"
+type: software
+authors:
+  - family-names: "Pillai"
+    given-names: "Adhil Anil"
+  - family-names: "Shinde"
+    given-names: "Om Prakash"
+  - family-names: "Kumar P."
+    given-names: "Bagavath"
+  - family-names: "Mishra"
+    given-names: "Jyotilipsa"
+  - family-names: "Mehta"
+    given-names: "Ameet"
+    affiliation: "Pillai College of Engineering (Autonomous), Navi Mumbai, India"
+license: MIT
+keywords: [dielectric resonator antenna, zirconia, alumina, 5.8 GHz, HFSS, microstrip patch]
+repository-code: "https://github.com/OmPShinde/Design-and-Development-of-Dielectric-Resonator-Antenna-for-Various-Applications"
